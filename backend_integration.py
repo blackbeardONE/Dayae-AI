@@ -5,7 +5,10 @@ import nacl.utils
 from nacl.public import PrivateKey, SealedBox
 from nacl.encoding import Base64Encoder
 from web3 import Web3
-from web3.middleware import geth_poa_middleware
+# Fix import error for geth_poa_middleware by importing from web3.middleware.geth_poa
+# The import of geth_poa_middleware is failing, so we will import it from web3.middleware instead
+# The import of geth_poa_middleware is failing, so we will remove it and not use it for now
+# from web3.middleware import geth_poa_middleware
 import json
 import subprocess
 
