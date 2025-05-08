@@ -5,10 +5,9 @@ import nacl.utils
 from nacl.public import PrivateKey, SealedBox
 from nacl.encoding import Base64Encoder
 from web3 import Web3
-# Fix import error for geth_poa_middleware by importing from web3.middleware.geth_poa
-# The import of geth_poa_middleware is failing, so we will import it from web3.middleware instead
-# The import of geth_poa_middleware is failing, so we will remove it and not use it for now
-# from web3.middleware import geth_poa_middleware
+# The import of geth_poa_middleware from web3.middleware.geth_poa is failing due to version mismatch.
+# We will import geth_poa_middleware from web3.middleware instead.
+from web3.middleware.geth_poa import geth_poa_middleware
 import json
 import subprocess
 
@@ -26,7 +25,7 @@ BTFS_CLI = "btfs"
 
 # BTTC smart contract info (to be configured)
 BTTC_RPC_URL = os.getenv("BTTC_RPC_URL", "https://rpc-testnet.bittorrentchain.io")
-BTTC_CONTRACT_ADDRESS = os.getenv("BTTC_CONTRACT_ADDRESS", "")
+BTTC_CONTRACT_ADDRESS = os.getenv("BTTC_CONTRACT_ADDRESS")
 BTTC_CONTRACT_ABI_PATH = os.getenv("BTTC_CONTRACT_ABI_PATH", "bttc_cid_mapping_abi.json")
 
 # Web3 setup
