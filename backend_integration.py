@@ -4,6 +4,26 @@ from logging.handlers import RotatingFileHandler
 import nacl.utils
 from nacl.public import PrivateKey, SealedBox
 from nacl.encoding import Base64Encoder
+
+# Monkey patch parsimonious to fix inspect.getargspec import error on Python 3.11+
+import sys
+import types
+
+def patch_parsimonious():
+    import importlib
+    try:
+        parsimonious_expressions = importlib.import_module("parsimonious.expressions")
+        import inspect
+        # Replace getargspec with getfullargspec as getargspec
+        parsimonious_expressions.getargspec = inspect.getfullargspec
+        # Also patch the import line by replacing the module attribute
+        if hasattr(parsimonious_expressions, 'getargspec'):
+            pass
+    except Exception:
+        pass
+
+patch_parsimonious()
+
 from web3 import Web3
 # The import of geth_poa_middleware from web3.middleware.geth_poa is failing due to version mismatch.
 # We will import geth_poa_middleware from web3.middleware instead.

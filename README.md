@@ -1,3 +1,14 @@
+This project needs a lot of time and hardware requirements. Help me accomplish my goal of serving humanity new technology for better life. Buy me a coffee! >>
+https://ko-fi.com/joedeldalioan
+
+or send me some love via paypal or crypto >>
+
+- **Paypal:** paypal.me/Dalioan
+- **Bitcoin (Unisat):** bc1qu8pknsrwvssspq4c6a5j4p3x835phq8n3ajcgw
+- **Solana:** FNEdD3PWMLwbNKxtaHy3W2NVfRJ7wqDNx4M9je8Xc6Mw
+- **Tron:** TGVrpryTJAmWEPWTKYB3tGRv5gWhE2g9Lo
+- **Metamask:** 0x9F32B8346bD728DF3AB7775971705D02fb86dD9c
+
 # Decentralized AI-Assisted Storage & Retrieval System
 
 ## Overview
@@ -57,3 +68,9 @@ Contributions are welcome! Please open issues or pull requests for improvements 
 
 ## License
 This project is licensed under the MIT License.
+
+## Developer 👨‍💻
+
+Developed by [Blackbeard](https://blackbeard.one) | [Ten Titanics](https://tentitanics.com) | [GitHub](https://github.com/blackbeardONE)
+
+© 2023-2025 Blackbeard. All rights reserved.# QSDM

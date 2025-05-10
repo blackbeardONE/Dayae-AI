@@ -4,4 +4,6 @@ langchain-openai
 langchain-together
 langchain-community
 pynacl
-web3
+web3>=7.0.0
+eth-abi>=3.0.0
+parsimonious>=0.10.0
